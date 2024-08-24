@@ -1,47 +1,74 @@
 import React from 'react';
-import { Card, List } from 'antd';
+import { Card, List, Divider, ConfigProvider, Typography } from 'antd';
+import Civil_img from '../assets/Civil_Law.png'
+import Criminal_img from '../assets/Criminal_Law.png'
+import Personal_img from '../assets/Personal_Law.png'
+import Employment_img from '../assets/Employment_Law.png'
+import Matrimonial_img from '../assets/Matrimonial_law.png'
+import Business_img from '../assets/Business_Law.png'
+
+const { Text } = Typography;
 const data = [
     {
-        title: 'Title 1',
+        title: 'Civil Law',
+        logo: Civil_img
     },
     {
-        title: 'Title 2',
+        title: 'Criminal Law',
+        logo: Criminal_img
     },
     {
-        title: 'Title 3',
+        title: 'Personal Law',
+        logo: Personal_img
     },
     {
-        title: 'Title 4',
+        title: 'Employment Law',
+        logo: Employment_img
     },
     {
-        title: 'Title 5',
+        title: 'Matrimonial Law',
+        logo: Matrimonial_img
     },
     {
-        title: 'Title 6',
-    },
+        title: 'Business Law',
+        logo: Business_img
+    }
 ];
+
 const PracticeArea = () => (
-    <List
-        grid={{
-            gutter: 16,
-            xs: 1,
-            sm: 2,
-            md: 4,
-            lg: 4,
-            xl: 6,
-            xxl: 3,
-        }}
-        dataSource={data}
-        renderItem={(item) => (
-            <List.Item>
-                <Card
-                    // title={item.title}
-                >
-                    Card content
-                </Card>
-            </List.Item>
-        )}
-        style={{ padding: '0 10%' }}
-    />
+    <div style={{ paddingLeft: "5%", paddingRight: "5%", textAlign: 'center' }}>
+        <ConfigProvider
+            theme={{
+                token: {
+                    /* here is your global tokens */
+                    fontSize: 20,
+                },
+            }}>
+            <Divider>Our Practice Areas</Divider>
+
+            <List
+                grid={{
+                    gutter: 16,
+                    column: 3,
+                    xs: 1,
+                    lg: 2,
+                }}
+                dataSource={data}
+                renderItem={(item) => (
+                    <List.Item>
+                        <Card
+                            // title={item.title}
+                            style={{
+                                boxShadow: '2px 4px 12px rgba(0, 0, 0, 0.08)',
+                                borderRadius: '12px',
+                            }}>
+                            <img src={item.logo} style={{width:"100px"}} alt='icon'></img> <br/>
+                            <Text strong>{item.title}</Text>
+
+                        </Card>
+                    </List.Item>
+                )} />
+        </ConfigProvider>
+    </div>
 );
 export default PracticeArea;
