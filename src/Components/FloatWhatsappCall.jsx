@@ -5,11 +5,11 @@ const FloatWhatsappCall = () => (
     <>
         <FloatButton.Group
             shape="circle"
-             
+
             style={{
-             insetInlineEnd:24, 
-             marginInlineEnd:10                        
-             }}
+                insetInlineEnd: 24,
+                marginInlineEnd: 10
+            }}
         >
             <ConfigProvider
                 theme={{
@@ -21,7 +21,7 @@ const FloatWhatsappCall = () => (
             >
                 <FloatButton icon={<PhoneOutlined />} type='primary' tooltip={<div>Call</div>} href='tel:919344063559' />
             </ConfigProvider>
-            
+
             <ConfigProvider
                 theme={{
                     token: {

@@ -36,7 +36,7 @@ const data = [
 ];
 
 const PracticeArea = () => (
-    <div style={{ paddingLeft: "5%", paddingRight: "5%", textAlign: 'center' }}>
+    <div style={{ padding:"0% 5%", textAlign: 'center' }}>
         <ConfigProvider
             theme={{
                 token: {
@@ -62,7 +62,7 @@ const PracticeArea = () => (
                                 boxShadow: '2px 4px 12px rgba(0, 0, 0, 0.08)',
                                 borderRadius: '12px',
                             }}>
-                            <img src={item.logo} style={{width:"100px"}} alt='icon'></img> <br/>
+                            <img src={item.logo} style={{ width: "100px" }} alt='icon'></img> <br />
                             <Text strong>{item.title}</Text>
 
                         </Card>

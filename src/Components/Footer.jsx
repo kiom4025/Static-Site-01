@@ -41,7 +41,7 @@ function FooterContent() {
                         // offset: 2,
                     }}
                 >
-                    <Space size={'large'} style={{paddingTop:"7%", paddingBottom:"7%"}}>
+                    <Space size={'large'} style={{ padding:"7% 0%" }}>
                         <X fontSize='large' />
                         <Instagram fontSize='large' />
                         <YouTube fontSize='large' />
@@ -56,7 +56,7 @@ function FooterContent() {
                     lg={{
                         span: 9,
                         offset: 4,
-                        
+
                     }}
                 >
                     <List

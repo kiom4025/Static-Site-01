@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, List, Typography } from 'antd';
+import { Card, Divider, List, Typography } from 'antd';
 import Mission_img from '../assets/Mission.png'
 import Value_img from '../assets/Value.jpeg'
 import Employment_img from '../assets/Employment_Law.png'
@@ -22,8 +22,8 @@ const data = [
 ];
 
 const Mission = () => (
-    <div style={{ paddingLeft: "5%", paddingRight: "5%", textAlign: 'center', height:'fit-content' }}>
-
+    <div style={{ padding:"2% 5%", textAlign: 'center', height: 'fit-content' }}>
+<Divider></Divider>
         <List
             grid={{
                 gutter: 60,
@@ -35,10 +35,10 @@ const Mission = () => (
             renderItem={(item) => (
                 <List.Item>
                     <Card
-                    style={{
-                                // boxShadow: '2px 4px 12px rgba(0, 0, 0, 0.08)',
-                                borderRadius: '0px',
-                            }}
+                        style={{
+                            borderRadius: '0px',
+
+                        }}
                     >
                         <img src={item.logo} style={{ width: "50px" }} alt='icon'></img> <br />
                         <Text>{item.content}</Text>
