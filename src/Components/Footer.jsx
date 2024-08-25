@@ -41,7 +41,7 @@ function FooterContent() {
                         // offset: 2,
                     }}
                 >
-                    <Space size={'large'} style={{ padding:"7% 0%" }}>
+                    <Space size={'large'} style={{ padding: "7% 0%" }}>
                         <X fontSize='large' />
                         <Instagram fontSize='large' />
                         <YouTube fontSize='large' />

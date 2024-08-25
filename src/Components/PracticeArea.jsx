@@ -36,7 +36,7 @@ const data = [
 ];
 
 const PracticeArea = () => (
-    <div style={{ padding:"0% 5%", textAlign: 'center' }}>
+    <div style={{ padding: "0% 5%", textAlign: 'center' }}>
         <ConfigProvider
             theme={{
                 token: {

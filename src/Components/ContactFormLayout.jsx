@@ -5,7 +5,7 @@ import Consulting from '../assets/Consult a lawyer.jpg'
 import { Col, Row } from 'antd';
 
 const ContactForm = () => (
-    <div >
+    <div style={{ textAlign: 'center' }}>
         <ConfigProvider
             theme={{
                 token: {
@@ -15,14 +15,14 @@ const ContactForm = () => (
             }}>
             <Divider style={{ paddingTop: '2%' }}>Consult a lawyer</Divider>
         </ConfigProvider>
-        <Row style={{alignItems:'center'}}>
+        <Row style={{ alignItems: 'center' }}>
             <Col
                 xs={{
                     span: 24,
                 }}
                 lg={{
                     span: 7,
-                    offset:2
+                    offset: 2
                 }}
             >
                 <img src={Consulting} style={{ height: '220px' }} alt='' />

@@ -7,10 +7,10 @@ import SliderImg_4 from '../assets/Slider_img_4.jpg'
 
 const ImageSlider = () => (
   <Carousel autoplay arrows infinite={true} dots={true}>
-     <img src={SliderImg_1} alt='Slider 1'></img>
-     <img src={SliderImg_2} alt='Slider 2'></img>
-     <img src={SliderImg_3} alt='Slider 3'></img>
-     <img src={SliderImg_4} alt='Slider 4'></img>
+    <img src={SliderImg_1} alt='Slider 1'></img>
+    <img src={SliderImg_2} alt='Slider 2'></img>
+    <img src={SliderImg_3} alt='Slider 3'></img>
+    <img src={SliderImg_4} alt='Slider 4'></img>
   </Carousel>
 );
 export default ImageSlider;

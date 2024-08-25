@@ -6,6 +6,7 @@ import FloatWhatsappCall from './FloatWhatsappCall';
 import Mission from './Mission';
 import ContactForm from './ContactFormLayout';
 import ImageSlider from './ImageSlider';
+import AboutUs from './About';
 
 
 const { Header, Content, Footer } = Layout;
@@ -29,10 +30,11 @@ const MainLayout = () => {
         style={{
           margin: '15px 15px',
           overflow: 'initial',
-          textAlign: 'center'
+          // textAlign: 'center'
         }}
       >
-      <ImageSlider />
+        <ImageSlider />
+        <AboutUs />
         <Mission />
         <PracticeArea />
         <ContactForm />
