@@ -6,7 +6,7 @@ import SliderImg_3 from '../assets/Slider_img_3.jpg'
 import SliderImg_4 from '../assets/Slider_img_4.jpg'
 
 const ImageSlider = () => (
-  <Carousel autoplay arrows infinite={true} dots={true}>
+  <Carousel autoplay arrows infinite={true} dots={true} adaptiveHeight={true}>
     <img src={SliderImg_1} alt='Slider 1'></img>
     <img src={SliderImg_2} alt='Slider 2'></img>
     <img src={SliderImg_3} alt='Slider 3'></img>

@@ -11,7 +11,7 @@ const data = [
 ];
 const AboutUs = () => (
 
-  <div style={{ textAlign: 'center', paddingTop: '4%' }}>
+  <div style={{ textAlign: 'center', paddingTop: '4%' }} id='aboutUsSection'>
     <Row style={{ alignItems: 'center' }}>
       <Col
         xs={{

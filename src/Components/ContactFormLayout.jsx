@@ -5,7 +5,7 @@ import Consulting from '../assets/Consult a lawyer.jpg'
 import { Col, Row } from 'antd';
 
 const ContactForm = () => (
-    <div style={{ textAlign: 'center' }}>
+    <div style={{ textAlign: 'center' }} id='contactFormSection'>
         <ConfigProvider
             theme={{
                 token: {

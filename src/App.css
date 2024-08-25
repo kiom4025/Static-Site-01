@@ -1,4 +1,23 @@
-.slick-track{
-    width: 100%;
-    height: auto;
-  }
+.slick-track {
+  width: 100%;
+  height: auto;
+}
+
+#Logo {
+  font-size: 1.8rem;
+  margin-left: 5%;
+  color: #e7a937;
+}
+
+/* The following is the header sticky code but not used right now since it block the top visual of the scroll Element */
+/* .ant-layout-header{
+
+  position:fixed;
+  width:100%;
+  z-index: 1000;
+} */
+
+/* 
+Credit:
+1. https://stackoverflow.com/questions/42345641/antd-fixed-header-in-layout
+*/
