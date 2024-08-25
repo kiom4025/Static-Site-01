@@ -1,19 +1,33 @@
 import React from 'react';
-import { Button } from 'antd';
+import { Button, Drawer } from 'antd';
 import { Col, Row } from 'antd';
 import Logo from '../assets/Logo.png'
+import { MenuOutlined } from '@ant-design/icons';
+import './Header.css';
 
-function handleClick(id) {
-    const anchor = document.querySelector(`#${id}`);
-    if (anchor) {
-        anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    } else {
-        console.error(`Element with id ${id} not found.`);
-    }
-}
 
 
 function HeaderContent() {
+ 
+
+    
+    const [openDrawer, setOpenDrawer] = React.useState(false);
+    function handleClick(id) {
+        const anchor = document.querySelector(`#${id}`);
+        if (anchor) {
+            anchor.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        } else {
+            console.error(`Element with id ${id} not found.`);
+        }
+        setOpenDrawer(false);
+    }
+    const onClose = () => {
+        setOpenDrawer(false);
+    }
+    const showDrawer = () => {
+        setOpenDrawer(true);
+    }
+
     return (
         <>
             <div
@@ -30,7 +44,19 @@ function HeaderContent() {
                     <img src={Logo} alt='Logo' height={60} style={{ margin: '1%' }} />
                     <b id='Logo'>Justice&nbsp;Warriors</b>
                 </div>
-                <Row
+                <div className='mobile-menu'>
+                    <Button type="primary" style={{background:"#e7a937"}} onClick={showDrawer}>
+                        <MenuOutlined />
+                    </Button>
+                    <Drawer width="250px" closable={true}  placement='right' open={openDrawer} onClose={onClose}>
+                        <Button type='text' size='large' onClick={() => handleClick('aboutUsSection')}>About us</Button>
+                        <Button type='text' size='large' onClick={() => handleClick('practiceAreaSection')}>Our Practice</Button>
+                        <Button size='large' onClick={() => handleClick('contactFormSection')}>Contact</Button>
+                    </Drawer>
+
+                </div>
+                <div className='desktop-menu'>
+                <Row 
                     style={{
                         display: 'flex',
                         justifyContent: 'flex-end',
@@ -48,6 +74,9 @@ function HeaderContent() {
                         <Button size='large' onClick={() => handleClick('contactFormSection')}>Contact</Button>
                     </Col>
                 </Row>
+                    
+                    </div>    
+                
             </div>
         </>
     )
