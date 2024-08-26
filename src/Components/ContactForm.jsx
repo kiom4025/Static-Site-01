@@ -1,13 +1,25 @@
+import React, { useState, useEffect } from 'react';
+import Cookies from 'js-cookie';
 import {
     Button,
     Form,
     Input,
     Select,
     message,
+    Result,
 } from 'antd';
 const { Option } = Select;
 
 const ConsultForm = () => {
+    const [isSubmitted, setIsSubmitted] = useState(false);
+
+    useEffect(() => {
+        const formSubmitted = Cookies.get('formSubmitted');
+        if (formSubmitted) {
+            setIsSubmitted(true);
+        }
+    }, []);
+
     const [form] = Form.useForm();
 
     const onReset = () => {
@@ -28,13 +40,16 @@ const ConsultForm = () => {
         })
             .then(response => {
                 // Note: You won't be able to access the response data here
-                console.log('Request sent successfully');
+                // console.log('Success:', response);
+                Cookies.set('formSubmitted', 'true', { expires: 1 / 24 }); // Set cookie to expire in 1 hour
+                setIsSubmitted(true);
+                message.info('Submission Success!');
             })
             .catch((error) => {
                 console.error('Error:', error);
+                message.error('Submission Failed!');
             });
         onReset();
-        message.info('Submission Sucess!');
     };
 
     const prefixSelector = (
@@ -49,6 +64,13 @@ const ConsultForm = () => {
         </Form.Item>
     );
 
+    if (isSubmitted) {
+        return (
+            <Result
+                title="Enquiry received. We will reach out to you shortly."
+            />
+        );
+    }
 
     return (
         <div style={{ display: 'flex', justifyContent: 'space-around' }}>
