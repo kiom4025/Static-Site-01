@@ -8,6 +8,7 @@ import ContactForm from './ContactFormLayout';
 import ImageSlider from './ImageSlider';
 import AboutUs from './About';
 import HeaderContent from './Header';
+import FooterContent2 from './Footer2';
 
 const { Header, Content, Footer } = Layout;
 
@@ -47,7 +48,8 @@ const MainLayout = () => {
           color: 'white',
         }}
       >
-        <FooterContent />
+        {/* <FooterContent /> */}
+        <FooterContent2 />
       </Footer>
 
     </Layout>

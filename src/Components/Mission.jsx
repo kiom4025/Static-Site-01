@@ -22,7 +22,7 @@ const data = [
 ];
 
 const Mission = () => (
-    <div style={{ padding: "2% 5%", textAlign: 'center', height: 'fit-content' }}>
+    <div id='MissionSection'>
         <Divider></Divider>
         <List
             grid={{
@@ -34,15 +34,9 @@ const Mission = () => (
             dataSource={data}
             renderItem={(item) => (
                 <List.Item>
-                    <Card
-                        style={{
-                            borderRadius: '0px',
-
-                        }}
-                    >
-                        <img src={item.logo} style={{ width: "50px" }} alt='icon'></img> <br />
-                        <Text>{item.content}</Text>
-
+                    <Card style={{borderRadius: '0px' }}>
+                        <img src={item.logo} id='CardImage' alt='icon'></img> <br />
+                        <Text style={{textAlign:'left'}}>{item.content}</Text>
                     </Card>
                 </List.Item>
             )} />
