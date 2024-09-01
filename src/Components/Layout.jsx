@@ -13,6 +13,7 @@ import content from '../data/content';
 
 const { Header, Content, Footer } = Layout;
 
+
 const MainLayout = () => {
   const {
     token: { colorBgContainer },
@@ -35,7 +36,8 @@ const MainLayout = () => {
           overflow: 'initial',
         }}
       >
-        <SliderComponent style={{ margin: "40px" }} {...content.hero} />
+        {/* <SliderComponent slides={content.slides} /> */}
+        <SliderComponent />
         <AboutUs />
         <Mission />
         <PracticeArea />

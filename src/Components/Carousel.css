@@ -1,14 +1,39 @@
+/* Base styles for the carousel container */
 .carouselPage {
-    /* margin-top:50px; */
-    height: 500px;
-    color: #fff;
-    /* line-height: 160px; */
-    text-align: center;
-    /* background: #364d79; */
-    background-image: url('../assets/Slider_img_3.jpg');
-    background-size: cover;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+    height: 400px; /* Adjust the height as needed */
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
 }
+
+/* Title styling */
+.carouselTitle {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Subtitle styling */
+.carouselSubtitle {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+/* Button styling */
+/* .ant-btn-primary {
+    background-color: #1890ff;
+    border-color: #1890ff;
+    color: white;
+} */
+
+/* .ant-btn-primary:hover {
+    background-color: #096dd9;
+    border-color: #096dd9;
+} */

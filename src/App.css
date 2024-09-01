@@ -8,7 +8,7 @@
   margin-left: 5%;
   color: #e7a937;
 }
-
+/* 
 .slider-item {
   position: relative;
 }
@@ -28,13 +28,13 @@
   left: 20px;
   color: white;
   text-align: center;
-}
+} */
  
-
+/* 
 body {
   display:flex; flex-direction:column; justify-content:center;
   min-height:100vh;
-}
+} */
 
 /* The following is the header sticky code but not used right now since it block the top visual of the scroll Element */
 /* .ant-layout-header{

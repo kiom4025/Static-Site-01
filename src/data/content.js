@@ -1,3 +1,5 @@
+const sliderImg1 = require('../assets/Slider_img_1.jpg');
+
 const content = {
   menuItems: [
     { label: 'About Us', link: 'aboutUsSection' },
@@ -9,6 +11,21 @@ const content = {
     subtitle: 'Fighting for Justice, One Case at a Time',
     ctaText: 'Contact Us',
   },
+  slides : [
+      {
+          title: 'Welcome to Our Website',
+          subtitle: 'Discover amazing things!',
+          ctaText: 'Learn More',
+          image: sliderImg1,
+      },
+      {
+          title: 'Get in Touch With Us',
+          subtitle: 'We are here to help',
+          ctaText: 'Call Us',
+          image: '../assets/Slider_img_1.jpg',
+      },
+      // Add more slides as needed
+    ],
   disclaimerModal: {
     title: 'Disclaimer',
     content: 'According to the guidelines of the Bar Council of India, lawyers and law offices are prohibited from soliciting clients or advertising.',
