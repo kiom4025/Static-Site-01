@@ -80,7 +80,7 @@ function FooterContent() {
             <div>
                 <br />
                 <p style={{ fontSize: '1rem' }}>
-                &#169;{content.footer.copyright}
+                    &#169;{content.footer.copyright}
                 </p>
             </div>
 

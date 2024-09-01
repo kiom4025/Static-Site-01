@@ -23,7 +23,7 @@ const content = {
       'Scroll Top'
     ]
   },
-  aboutUs: [{ 
+  aboutUs: [{
     title: 'About Us',
     content: `At Justice Warrior Law Firm, we are dedicated to providing exceptional legal services 
       with a personal touch. Founded in 2024, our firm has become a trusted advocate for individuals 
@@ -52,7 +52,7 @@ const content = {
       { title: 'Business Law', description: 'sample_text' },
     ],
   },
-  contactForm: { 
+  contactForm: {
     title: 'Consult a lawyer',
     responseTitle: 'Enquiry received. We will reach out to you shortly.',
     submitButtonText: 'Book Appointment'

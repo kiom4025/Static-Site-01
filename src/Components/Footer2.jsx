@@ -29,13 +29,13 @@ function FooterContent2() {
                     }}
                 >
                     <Space size={'large'} style={{ padding: "7% 0%" }}>
-                    <Link href={content.footer.socialMedia.twitter} target='_blank'><X fontSize='large' /></Link>
-                    <Link href={content.footer.socialMedia.instagram} target='_blank'><Instagram fontSize='large' /></Link>
-                    <Link href={content.footer.socialMedia.youtube} target='_blank'><YouTube fontSize='large' /></Link>
-                    <Link href={content.footer.socialMedia.linkedin} target='_blank'><LinkedIn fontSize='large' /></Link>
+                        <Link href={content.footer.socialMedia.twitter} target='_blank'><X fontSize='large' /></Link>
+                        <Link href={content.footer.socialMedia.instagram} target='_blank'><Instagram fontSize='large' /></Link>
+                        <Link href={content.footer.socialMedia.youtube} target='_blank'><YouTube fontSize='large' /></Link>
+                        <Link href={content.footer.socialMedia.linkedin} target='_blank'><LinkedIn fontSize='large' /></Link>
                     </Space>
                 </Col>
-                
+
                 <Col
                     xs={{
                         span: 24,
@@ -61,7 +61,7 @@ function FooterContent2() {
             <div>
                 <br />
                 <p style={{ fontSize: '1rem' }}>
-                &#169;{content.footer.copyright}
+                    &#169;{content.footer.copyright}
                 </p>
             </div>
 

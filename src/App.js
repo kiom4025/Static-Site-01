@@ -36,7 +36,7 @@ function App() {
         <>
           {content.disclaimerModal.content}
           <br /><br />
-          <i style={{fontSize:'0.7rem'}}>{content.disclaimerModal.agreementNote}</i>
+          <i style={{ fontSize: '0.7rem' }}>{content.disclaimerModal.agreementNote}</i>
         </>
       </Modal>
 

@@ -34,9 +34,9 @@ const Mission = () => (
             dataSource={data}
             renderItem={(item) => (
                 <List.Item>
-                    <Card style={{borderRadius: '0px' }}>
+                    <Card style={{ borderRadius: '0px' }}>
                         <img src={item.logo} id='CardImage' alt='icon'></img> <br />
-                        <Text style={{textAlign:'left'}}>{item.content}</Text>
+                        <Text style={{ textAlign: 'left' }}>{item.content}</Text>
                     </Card>
                 </List.Item>
             )} />
