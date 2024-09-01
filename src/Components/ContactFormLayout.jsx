@@ -3,6 +3,7 @@ import { ConfigProvider, Divider } from 'antd';
 import ConsultForm from './ContactForm';
 import Consulting from '../assets/Consult a lawyer.jpg'
 import { Col, Row } from 'antd';
+import content from '../data/content';
 
 const ContactForm = () => (
     <div style={{ textAlign: 'center' }} id='contactFormSection'>
@@ -13,7 +14,7 @@ const ContactForm = () => (
                     fontSize: 20,
                 },
             }}>
-            <Divider style={{ paddingTop: '2%' }}>Consult a lawyer</Divider>
+            <Divider style={{ paddingTop: '2%' }}>{content.contactForm.title}</Divider>
         </ConfigProvider>
         <Row style={{ alignItems: 'center' }}>
             <Col

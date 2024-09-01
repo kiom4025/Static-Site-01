@@ -2,21 +2,7 @@ import React from 'react';
 import { LinkedIn, YouTube, Instagram, X } from '@mui/icons-material';
 import { ConfigProvider, Space, List } from 'antd';
 import { Col, Row } from 'antd';
-
-const data = [
-    '5423, Saket Court, New Delhi',
-    '568, Patiala House Court, New Delhi',
-    '247, Block A, Rajasthan High Court,Jaipur',
-    '265, Sikandrabad, Bulandshahr, Uttar Pradesh',
-    '102, Bhavya Sree Arcade, Erragada, Hyderabad',
-];
-const data2 = [
-    'Mobile: +91 987654321',
-    'Mobile: +56 968435219',
-    'Telephone: 044-87654321',
-    '\n ',
-    'help@justicewarrior.in',
-];
+import content from '../data/content'
 
 function FooterContent() {
     return (
@@ -61,10 +47,10 @@ function FooterContent() {
                 >
                     <List
                         size="small"
-                        header={<> Our Offices :</>}
+                        header={<> {content.footer.offices.title} :</>}
                         // footer={<div>Footer</div>}
                         // bordered
-                        dataSource={data}
+                        dataSource={content.footer.offices.locations}
                         renderItem={(item) => <List.Item>{item}</List.Item>}
                         style={{ width: "fit-content", textAlign: 'start', textWrap: 'balance' }}
                     />
@@ -81,10 +67,10 @@ function FooterContent() {
                 >
                     <List
                         size="small"
-                        header={<>Contact :</>}
+                        header={<>{content.footer.contact.title} :</>}
                         // footer={<div>Footer</div>}
                         // bordered
-                        dataSource={data2}
+                        dataSource={content.footer.contact.list}
                         renderItem={(item) => <List.Item>{item}</List.Item>}
                         style={{ width: "fit-content", textAlign: 'start' }}
                     />
@@ -94,7 +80,7 @@ function FooterContent() {
             <div>
                 <br />
                 <p style={{ fontSize: '1rem' }}>
-                    Copyright @{new Date().getFullYear()}, Justice Warriors law firm.
+                &#169;{content.footer.copyright}
                 </p>
             </div>
 

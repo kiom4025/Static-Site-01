@@ -1,14 +1,15 @@
 import React from 'react';
 import { Layout, theme } from 'antd';
-import FooterContent from './Footer';
 import PracticeArea from './PracticeArea';
 import FloatWhatsappCall from './FloatWhatsappCall';
 import Mission from './Mission';
 import ContactForm from './ContactFormLayout';
-import ImageSlider from './ImageSlider';
+import SliderComponent from '../Components/carousel.jsx';
 import AboutUs from './About';
 import HeaderContent from './Header';
+// import FooterContent from './Footer';
 import FooterContent2 from './Footer2';
+import content from '../data/content';
 
 const { Header, Content, Footer } = Layout;
 
@@ -34,7 +35,7 @@ const MainLayout = () => {
           overflow: 'initial',
         }}
       >
-        <ImageSlider />
+        <SliderComponent style={{ margin: "40px" }} {...content.hero} />
         <AboutUs />
         <Mission />
         <PracticeArea />

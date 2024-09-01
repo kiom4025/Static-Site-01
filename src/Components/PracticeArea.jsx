@@ -6,31 +6,32 @@ import Personal_img from '../assets/Personal_Law.png'
 import Employment_img from '../assets/Employment_Law.png'
 import Matrimonial_img from '../assets/Matrimonial_law.png'
 import Business_img from '../assets/Business_Law.png'
+import content from '../data/content';
 
 const { Text } = Typography;
 const data = [
     {
-        title: 'Civil Law',
+        title: content.practiceAreas.areas[0].title,
         logo: Civil_img
     },
     {
-        title: 'Criminal Law',
+        title: content.practiceAreas.areas[1].title,
         logo: Criminal_img
     },
     {
-        title: 'Personal Law',
+        title: content.practiceAreas.areas[2].title,
         logo: Personal_img
     },
     {
-        title: 'Employment Law',
+        title: content.practiceAreas.areas[3].title,
         logo: Employment_img
     },
     {
-        title: 'Matrimonial Law',
+        title: content.practiceAreas.areas[4].title,
         logo: Matrimonial_img
     },
     {
-        title: 'Business Law',
+        title: content.practiceAreas.areas[5].title,
         logo: Business_img
     }
 ];
@@ -44,7 +45,7 @@ const PracticeArea = () => (
                     fontSize: 20,
                 },
             }}>
-            <Divider>Our Practice Areas</Divider>
+            <Divider>{content.practiceAreas.title}</Divider>
 
             <List
                 grid={{

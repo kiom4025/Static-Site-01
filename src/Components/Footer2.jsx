@@ -3,15 +3,7 @@ import Link from '@mui/material/Link';
 import { LinkedIn, YouTube, Instagram, X } from '@mui/icons-material';
 import { ConfigProvider, Space, List } from 'antd';
 import { Col, Row } from 'antd';
-
-
-const data2 = [
-    'Mobile: +91 987654321',
-    'Mobile: +56 968435219',
-    'Telephone: 044-87654321',
-    '\n ',
-    'help@justicewarrior.in',
-];
+import content from '../data/content'
 
 function FooterContent2() {
     return (
@@ -37,12 +29,10 @@ function FooterContent2() {
                     }}
                 >
                     <Space size={'large'} style={{ padding: "7% 0%" }}>
-                    <Link href="https://twitter.com/"><X fontSize='large' /></Link>
-                    <Link href="https://www.instagram.com/"><Instagram fontSize='large' /></Link>
-                    <Link href="https://www.youtube.com/" 
-                    // color={'error'}
-                    ><YouTube fontSize='large' /></Link>
-                    <Link href="https://in.linkedin.com/"><LinkedIn fontSize='large' /></Link>
+                    <Link href={content.footer.socialMedia.twitter} target='_blank'><X fontSize='large' /></Link>
+                    <Link href={content.footer.socialMedia.instagram} target='_blank'><Instagram fontSize='large' /></Link>
+                    <Link href={content.footer.socialMedia.youtube} target='_blank'><YouTube fontSize='large' /></Link>
+                    <Link href={content.footer.socialMedia.linkedin} target='_blank'><LinkedIn fontSize='large' /></Link>
                     </Space>
                 </Col>
                 
@@ -58,10 +48,10 @@ function FooterContent2() {
                 >
                     <List
                         size="small"
-                        header={<>Contact :</>}
+                        header={<>{content.footer.contact.title} :</>}
                         // footer={<div>Footer</div>}
                         // bordered
-                        dataSource={data2}
+                        dataSource={content.footer.contact.list}
                         renderItem={(item) => <List.Item>{item}</List.Item>}
                         style={{ width: "fit-content", textAlign: 'start' }}
                     />
@@ -71,7 +61,7 @@ function FooterContent2() {
             <div>
                 <br />
                 <p style={{ fontSize: '1rem' }}>
-                    Copyright @{new Date().getFullYear()}, Justice Warriors law firm.
+                &#169;{content.footer.copyright}
                 </p>
             </div>
 

@@ -3,20 +3,20 @@ import { Card, Divider, List, Typography } from 'antd';
 import Mission_img from '../assets/Mission.png'
 import Value_img from '../assets/Value.jpeg'
 import Employment_img from '../assets/Employment_Law.png'
-
+import content from '../data/content';
 
 const { Text } = Typography;
 const data = [
     {
-        content: 'At Justice Warrior Law Firm, we uphold integrity, client-centered service, excellence, justice, fairness, respect, and accountability.',
+        content: content.missionStatement[0].content,
         logo: Value_img
     },
     {
-        content: 'At Justice Warrior, our mission is to provide exceptional legal services with a personal touch. We believe in upholding the principles of justice and fairness, ensuring that every client receives the best possible representation.',
+        content: content.missionStatement[1].content,
         logo: Mission_img
     },
     {
-        content: 'We endeavor to create a legal advice system where each and every client  finds his disputes redressed in an economical and timely fashion.',
+        content: content.missionStatement[2].content,
         logo: Employment_img
     }
 ];

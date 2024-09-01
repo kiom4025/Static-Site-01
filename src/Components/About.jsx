@@ -2,13 +2,8 @@ import React from 'react';
 import { ConfigProvider, List } from 'antd';
 import AboutUS_img from '../assets/AboutUS.png'
 import { Col, Row } from 'antd';
+import content from '../data/content'
 
-const data = [
-  {
-    title: 'About us',
-    description: "At Justice Warrior Law Firm, we are dedicated to providing exceptional legal services with a personal touch. Founded in 2024, our firm has become a trusted advocate for individuals and businesses seeking justice and fairness. Our experienced team of advocates brings a wealth of knowledge and a relentless commitment to achieving the best possible outcomes for our clients.",
-  },
-];
 const AboutUs = () => (
 
   <div style={{ paddingTop: '4%' }} id='aboutUsSection'>
@@ -45,9 +40,9 @@ const AboutUs = () => (
           }}
         >
           <List
-            header={<b style={{ fontSize: '1.5rem' }}>{data[0].title}</b>}
-            dataSource={data}
-            renderItem={(item) => <List.Item>{item.description}</List.Item>}
+            header={<b style={{ fontSize: '1.5rem' }}>{content.aboutUs[0].title}</b>}
+            dataSource={content.aboutUs}
+            renderItem={(item) => <List.Item>{item.content}</List.Item>}
           />
         </ConfigProvider>
       </Col>

@@ -8,6 +8,8 @@ import {
     message,
     Result,
 } from 'antd';
+import content from '../data/content'
+
 const { Option } = Select;
 
 const ConsultForm = () => {
@@ -67,7 +69,7 @@ const ConsultForm = () => {
     if (isSubmitted) {
         return (
             <Result
-                title="Enquiry received. We will reach out to you shortly."
+                title={content.contactForm.responseTitle}
             />
         );
     }
@@ -147,7 +149,7 @@ const ConsultForm = () => {
 
                 <Form.Item >
                     <Button type="primary" htmlType="submit">
-                        Book Appointment
+                        {content.contactForm.submitButtonText}
                     </Button>
                 </Form.Item>
             </Form>
