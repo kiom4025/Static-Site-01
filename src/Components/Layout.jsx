@@ -4,7 +4,7 @@ import PracticeArea from './PracticeArea';
 import FloatWhatsappCall from './FloatWhatsappCall';
 import Mission from './Mission';
 import ContactForm from './ContactFormLayout';
-import SliderComponent from '../Components/carousel.jsx';
+import SliderComponent from '../Components/carouselnew.jsx';
 import AboutUs from './About';
 import HeaderContent from './Header';
 // import FooterContent from './Footer';
@@ -36,8 +36,8 @@ const MainLayout = () => {
           overflow: 'initial',
         }}
       >
-        {/* <SliderComponent slides={content.slides} /> */}
-        <SliderComponent />
+        <SliderComponent slides={content.slides} />
+        {/* <SliderComponent /> */}
         <AboutUs />
         <Mission />
         <PracticeArea />

@@ -1,0 +1,33 @@
+.carouselPage1{
+    margin-top:50px;
+    height: 500px;
+    color: #fff;
+    /* line-height: 160px; */
+    /* filter: brightness(70%);
+    backdrop-filter: blur(5px); */
+    text-align: center;
+    /* background: #364d79; */
+    background-image: url('../assets/corousel1.jpg');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carouselPage2{
+    margin-top:50px;
+    height: 500px;
+    color: #fff;
+    /* line-height: 160px; */
+    /* filter: brightness(70%);
+    backdrop-filter: blur(5px); */
+    text-align: center;
+    /* background: #364d79; */
+    background-image: url('../assets/corousel2.WEBP');
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

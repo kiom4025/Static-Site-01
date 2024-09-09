@@ -1,14 +1,28 @@
 /* Base styles for the carousel container */
-.carouselPage {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 400px; /* Adjust the height as needed */
-    background-size: cover;
-    background-position: center;
-    color: white;
+.carouselPage0 {
+    width: 100%;
+    height: 500px;
+    background-image: url('../assets/Slider_img_1.jpg'); 
+    /* Path relative to the public folder */
+    background-size: cover; /* Cover the div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
     text-align: center;
+    justify-content: center;
+    color: white;
+}
+
+.carouselPage1 {
+    width: 100%;
+    height: 500px;
+    background-image: url('../assets/Slider_img_2.jpg'); 
+    /* Path relative to the public folder */
+    background-size: cover; /* Cover the div */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    text-align: center;
+    color: white;
+    justify-content: center;
 }
 
 /* Title styling */

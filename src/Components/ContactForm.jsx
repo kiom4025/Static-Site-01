@@ -60,8 +60,8 @@ const ConsultForm = () => {
                 style={{
                     width: 70,
                 }}
-            >
-                <Option value="91">+91</Option>
+            defaultValue="+91">
+                <Option value="+91">+91</Option>
             </Select>
         </Form.Item>
     );
